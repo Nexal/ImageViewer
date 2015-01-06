@@ -1,7 +1,7 @@
 package application;
 
 import control.*;
-import gui.ApplicationFrame;
+import swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.*;
