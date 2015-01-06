@@ -1,5 +1,7 @@
 package persistence;
 
-public class ImageLoader {
-    
+import model.RealImage;
+
+public interface ImageLoader {
+    public RealImage load();
 }

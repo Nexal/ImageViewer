@@ -1,5 +1,8 @@
 package persistence;
 
-public class ImageLoaderList {
-    
+import java.util.List;
+import model.Image;
+
+public interface ImageLoaderList {
+    public List<Image> load();
 }

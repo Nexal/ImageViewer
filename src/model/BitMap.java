@@ -1,5 +1,6 @@
 package model;
 
-public class BitMap {
-    
+public interface BitMap {
+    public double getWidth();
+    public double getHeigth();
 }
