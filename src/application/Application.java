@@ -1,6 +1,7 @@
 package application;
 
-import control.DictionaryCommand;
+import control.*;
+import gui.ApplicationFrame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.*;
@@ -34,6 +35,12 @@ public class Application {
                 };
             }
         };
+        
+        ApplicationFrame window = new ApplicationFrame(actionListenerFactory);
+        window.getImageViewer().setImage(list.get(0));
+        commandSet.put("next", new NextImageCommand(window.getImageViewer()));
+        commandSet.put("prev", new PrevImageCommand(window.getImageViewer()));
+        window.setVisible(true);
         
     }
     
