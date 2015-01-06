@@ -18,7 +18,7 @@ public class ImageLoaderFileList implements ImageLoaderList{
 
     @Override
     public List<Image> load() {
-        return null;
+        return linkImage(loadImage());
     }
     
     public List<Image> loadImage(){
