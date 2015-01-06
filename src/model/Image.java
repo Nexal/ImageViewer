@@ -3,7 +3,6 @@ package model;
 public abstract class Image {
     private Image next;
     private Image prev;
-    private BitMap bitmap;
 
     public abstract BitMap getBitMap();
 
