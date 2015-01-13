@@ -41,7 +41,6 @@ public class Application {
         commandSet.put("next", new NextImageCommand(window.getImageViewer()));
         commandSet.put("prev", new PrevImageCommand(window.getImageViewer()));
         window.setVisible(true);
-        
     }
     
 }
